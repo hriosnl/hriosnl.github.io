@@ -1,0 +1,12 @@
+.dog-name {
+  font-family: 'Caprasimo', cursive;
+}
+
+.tingle-content {
+  display: none;
+}
+
+#mapBox {
+  display: none;
+  width: 100%; 
+}

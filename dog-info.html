@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tingle.min.css" />
+
+    <title>QR Doggo | About Me</title>
+  </head>
+  <body class="text-lg">
+    <div class="flex flex-col mb-5">
+      <figure class="flex flex-col bg-cyan-200 p-6">
+        <img
+          src="puplex.jpg"
+          alt="Pupin"
+          class="rounded-full h-40 w-40 self-center drop-shadow-lg"
+        />
+      </figure>
+
+      <section class="p-5">
+        <div class="pb-5">
+          <h1 class="text-3xl text-sky-950 py-5 uppercase">About Me</h1>
+          <p>Hi I'm <span class="bg-sky-200">Pupin!</span></p>
+          <p>
+            My birthday is <span class="bg-sky-200">December 23, 2014</span>.
+          </p>
+          <p>I'm an <span class="bg-sky-200">Aspin</span>.</p>
+          <p>
+            My fur colors are <span class="bg-sky-200">white and brown</span>.
+          </p>
+          <div class="py-3">
+            <p>I'm a good boy, but I don't like motorcyles.</p>
+            <p>I have a separation anxiety.</p>
+            <p>I live with my mother, Hachi. She is brown and old.</p>
+          </div>
+          <p>I like <span class="bg-sky-200">bread and milk</span>!</p>
+        </div>
+        <div class="py-5">
+          <h1 class="text-3xl text-sky-950 py-5 uppercase">About My Health</h1>
+          <p>
+            I am microchipped. No.
+            <span class="bg-sky-200">900085001646064</span>
+          </p>
+          <p>I had anti-rabies vaccination last February 2, 2023.</p>
+        </div>
+      </section>
+
+      <button
+        class="rounded-md bg-red-200 text-red-800 py-2 mb-2 font-semibold drop-shadow-xl w-40 self-center uppercase report-button"
+      >
+        Report Missing
+      </button>
+
+      <a href="index.html" class="self-center">
+        <button
+          class="rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
+        >
+          Back
+        </button>
+      </a>
+    </div>
+
+    <!-- Modal content -->
+    <div class="tingle-with-btn tingle-content">
+      <h1>Help the owner find this dog's location</h1>
+      <p>Your discretion will this pet safe.</p>
+      <p>Share the GPS location of where you scanned this dog's ID.</p>
+    </div>
+
+    <div class="tingle-with-map tingle-content">
+      <!-- <h3>Location</h3> -->
+      <div id="map" class="h-96"></div>
+    </div>
+
+    <!-- /Modal content -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tingle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

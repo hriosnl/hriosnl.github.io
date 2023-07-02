@@ -3,114 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Puplexs</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="balls.css" />
+    <link rel="stylesheet" href="tingle.min.css" />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <title>QR Doggo</title>
   </head>
   <body>
-    <div class="flex font-sans">
-      <div class="flex-none w-48 relative">
-        <img
-          src="https://tailwindcss.com/_next/static/media/classic-utility-jacket.82031370.jpg  "
-          alt=""
-          class="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
-        />
-      </div>
-      <form class="flex-auto p-6">
-        <div class="flex flex-wrap">
-          <h1 class="flex-auto text-lg font-semibold text-slate-900">
-            Classic Utility Jacket
-          </h1>
-          <div class="text-lg font-semibold text-slate-500">$110.00</div>
-          <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
-            In stock
-          </div>
-        </div>
-        <div
-          class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200"
+    <form>
+      <div class="flex flex-col items-center py-10 px-6">
+        <h1 class="dog-name text-6xl mb-6 text-sky-950">Pupin</h1>
+        <button
+          class="w-full h-12 my-3 font-bold rounded-md drop-shadow-xl bg-red-200 text-red-800 uppercase report-button"
+          type="button"
         >
-          <div class="space-x-2 flex text-sm">
-            <label>
-              <input
-                class="sr-only peer"
-                name="size"
-                type="radio"
-                value="xs"
-                checked
-              />
-              <div
-                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-              >
-                XS
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="s" />
-              <div
-                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-              >
-                S
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="m" />
-              <div
-                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-              >
-                M
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="l" />
-              <div
-                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-              >
-                L
-              </div>
-            </label>
-            <label>
-              <input class="sr-only peer" name="size" type="radio" value="xl" />
-              <div
-                class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white"
-              >
-                XL
-              </div>
-            </label>
-          </div>
-        </div>
-        <div class="flex space-x-4 mb-6 text-sm font-medium">
-          <div class="flex-auto flex space-x-4">
-            <button
-              class="h-10 px-6 font-semibold rounded-md bg-black text-white"
-              type="submit"
-            >
-              Buy now
-            </button>
-            <button
-              class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900"
-              type="button"
-            >
-              Add to bag
-            </button>
-          </div>
+          Report Missing!
+        </button>
+        <figure class="px-1 py-6">
+          <img class="rounded-md" src="./puplex.jpg" alt="Puplex" />
+          <!-- <figcaption>Puplex, the dog with personality.</figcaption> -->
+        </figure>
+        <!-- REMOVE ME -->
+        <a class="w-full py-2" href="./dog-info.html">
           <button
-            class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200"
+            class="w-full rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
             type="button"
-            aria-label="Like"
           >
-            <svg width="20" height="20" fill="currentColor" aria-hidden="true">
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-              />
-            </svg>
+            About Me
           </button>
-        </div>
-        <p class="text-sm text-slate-700">
-          Free shipping on all continental US orders.
-        </p>
-      </form>
+        </a>
+        <a class="w-full py-2" href="./owner-info.html">
+          <button
+            class="w-full rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
+            type="button"
+          >
+            About My Human
+          </button>
+        </a>
+      </div>
+    </form>
+
+    <!-- <div id="lugar" class="h-96"></div> -->
+
+    <!-- Modal content -->
+    <div class="tingle-with-btn tingle-content">
+      <h1 class="text-2xl mb-2">Help me find my human.</h1>
+      <p>
+        If you have scanned my ID, please share the GPS location with my human
+        through this app.
+      </p>
+      <br />
+      <p>We will not save any of your information.</p>
     </div>
+
+    <div class="tingle-with-map tingle-content">
+      <!-- <h3>Location</h3> -->
+      <div id="map" class="h-96"></div>
+    </div>
+
+    <!-- /Modal content -->
+
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tingle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

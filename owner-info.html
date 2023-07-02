@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tingle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>QR Doggo | About My Human</title>
+  </head>
+  <body class="text-lg">
+    <div class="flex flex-col mb-5">
+      <figure class="flex flex-col bg-cyan-200 p-6">
+        <img
+          src="human.png"
+          alt="Pupin"
+          class="h-40 w-40 self-center drop-shadow-lg"
+        />
+      </figure>
+
+      <section class="p-5">
+        <div class="pb-5">
+          <h1 class="text-3xl text-sky-950 py-5 uppercase">About My Human</h1>
+          <p>Aicee Taguilaso</p>
+          <p>0917 6543 210</p>
+          <p>aicee@gmail.com</p>
+
+          <div class="py-3">
+            <a class="mx-1" href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook fa-xl"></i>
+            </a>
+            <a class="mx-1" href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+            <a class="mx-1" href="https://www.twitter.com">
+              <i class="fa-brands fa-twitter fa-xl"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <a href="index.html" class="self-center">
+        <button
+          class="rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
+        >
+          Back
+        </button>
+      </a>
+    </div>
+
+    <!-- Modal content -->
+    <div class="tingle-with-btn tingle-content">
+      <h1>Help the owner find this dog's location</h1>
+      <p>Your discretion will this pet safe.</p>
+      <p>Share the GPS location of where you scanned this dog's ID.</p>
+    </div>
+
+    <div class="tingle-with-map tingle-content">
+      <!-- <h3>Location</h3> -->
+      <div id="map" class="h-96"></div>
+    </div>
+
+    <!-- /Modal content -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tingle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
