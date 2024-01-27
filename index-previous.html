@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="balls.css" />
+    <link rel="stylesheet" href="tingle.min.css" />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+    <title>QR Doggo</title>
+  </head>
+  <body>
+    <form>
+      <div class="flex flex-col items-center py-10 px-6">
+        <h1 class="dog-name text-6xl mb-6 text-sky-950">Pupin</h1>
+        <button
+          class="w-full h-12 my-3 font-bold rounded-md drop-shadow-xl bg-red-200 text-red-800 uppercase report-button"
+          type="button"
+        >
+          Report Missing!
+        </button>
+        <figure class="px-1 py-6">
+          <img class="rounded-md" src="./puplex.jpg" alt="Puplex" />
+          <!-- <figcaption>Puplex, the dog with personality.</figcaption> -->
+        </figure>
+        <!-- REMOVE ME -->
+        <a class="w-full py-2" href="./dog-info.html">
+          <button
+            class="w-full rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
+            type="button"
+          >
+            About Me
+          </button>
+        </a>
+        <a class="w-full py-2" href="./owner-info.html">
+          <button
+            class="w-full rounded-md bg-cyan-200 py-2 font-semibold drop-shadow-xl w-40 uppercase"
+            type="button"
+          >
+            About My Human
+          </button>
+        </a>
+      </div>
+    </form>
+
+    <!-- <div id="lugar" class="h-96"></div> -->
+
+    <!-- Modal content -->
+    <div class="tingle-with-btn tingle-content">
+      <h1 class="text-2xl mb-2">Help me find my human.</h1>
+      <p>
+        If you have scanned my ID, please share the GPS location with my human
+        through this app.
+      </p>
+      <br />
+      <p>We will not save any of your information.</p>
+    </div>
+
+    <div class="tingle-with-map tingle-content">
+      <!-- <h3>Location</h3> -->
+      <div id="map" class="h-96"></div>
+    </div>
+
+    <!-- /Modal content -->
+
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tingle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
